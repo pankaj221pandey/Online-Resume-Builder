@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <script src="script.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1E22Q1F45J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1E22Q1F45J');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="aslogo.png">
+
+</head>
+<body>
+
+    <div class="navbar">
+        <img class="logo" src="aslogo.png" alt="check">
+    <nav class="nav">
+        <a href="contact.html"><div>CONTACT</div></a>
+        <a href="contact.html"><div>HOW TO USE</div></a>
+        <a href="contact.html"><div>TEMPLATES</div></a>
+    </nav>
+    </div>
+
+    <div class="header">
+        <center><h1>RESUME BUILDER</h1></center>
+    </div>
+
+
+
+    <div class="container">
+        
+        <div class="resume">
+            <center><h2>About You</h2></center>
+            <br>
+            <hr>
+            <br><br>
+            <form  method="post" action="/Resume view" enctype="multipart/form-data">
+            
+               
+                <input type="file" name="image" placeholder="photourl" accept="image/*" required>
+                <input type="text" name="name" placeholder="name">
+                <input type="date" name="dob" placeholder="DOB">
+                <input type="email" name="email" placeholder="emial">
+                <input type="number" name="phone" placeholder="phone-number">
+                <input type="text" name="prof" placeholder="profession">
+                <input type="text" name="place" placeholder="place">
+                <input type="text" name="link" placeholder="protfolio-link">
+               
+                <div id="div1"><br><br>
+                    <hr>
+                   <center> <h2>Skills   <input type="button" onclick="add()" class="add" value="+"></h2></center>
+                   <hr><br><br>
+                    
+                    <input type="text" name="skill" placeholder="Skills">
+                    <!-- <input type="button" onclick="add()" class="add" value="Add"> -->
+                </div>
+
+                <div id="div2">
+                    <br><br>
+                    <hr>
+                    <center><h2>Languages   <input type="button" onclick="add1()" class="add" value="+"></h2></center>
+                    <hr><br><br>
+                    <input type="text" name="lang" placeholder="Language">
+                   
+                </div>
+
+                <div id="div3">
+                <br><br>
+                <hr>
+                <center><h2>Experience   <input type="button" onclick="add2()" class="add" value="+"></h2></center>
+                <hr><br><br>
+                <input type="text" name="exp" placeholder="Company Name">
+                <input type="date" name="exp" placeholder="dob">
+                <textarea name="exp" id="" cols="30" rows="2" placeholder="about it"></textarea>
+               
+            </div>
+
+            <div id="div4"> <br><br>
+                <hr>
+                <center><h2>Education     <input type="button" onclick="add3()" class="add" value="+"></h2></center>
+                <hr><br><br>
+                <input type="text" name="edu" placeholder="Institution Name">
+                <input type="date" name="edu" placeholder="dob">
+                <textarea name="edu" id="" cols="30" rows="2" placeholder="about it"></textarea>
+             
+            </div>
+               
+                <input type="submit" name="" id="button">
+                
+            </form>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <footer></footer>
+    </div>
+
+ 
+    
+</body>
+</html>
